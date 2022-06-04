@@ -22,7 +22,7 @@ import com.banking.fin.entity.Banking;
 import com.banking.fin.service.BankingService;
 
 @RestController
-@RequestMapping("/Bank")
+@RequestMapping("/Banks")
 public class FinanceController {
 	@Autowired
 	private BankingService Bankingservice;
@@ -92,10 +92,10 @@ public class FinanceController {
     	 return new ResponseEntity<Boolean>(b,HttpStatus.OK);
     	 }else {
     		 return new ResponseEntity<Boolean>(b,HttpStatus.CONFLICT);
+    		
     	 }
      }
      
-		
 	}
 
 
